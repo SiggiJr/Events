@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <p class="event_paragraph">Click Here</p>
+    <section>
+      <h3>Klickzähler</h3>
+      <button id="click-me">Click me: 0</button>
+      <h5>Gute Praxis: kein JavaScript-Code im HTML</h5>
+    </section>
+    <select id="my-select">
+      <option value="" disabled selected>Select One</option>
+      <option value="select1" selected>Select 1</option>
+      <option value="select2">Select 2</option>
+      <option value="select3">Select 3</option>
+      <option value="select4">Select 4</option>
+      <option value="select5">Select 5</option>
+    </select>
+    <p id="option-selected">Sie haben ausgewählt select1</p>
+    <ul id="umschalter">
+      <li id="grauTaste" data-bgc="gray"></li>
+      <li id="weissTaste" data-bgc="#fff"></li>
+      <li id="blauTaste" data-bgc="#00f" data-color="#fff"></li>
+      <li id="gelbTaste" data-bgc="yellow"></li>
+    </ul>
+
+    <h1>Farbschema Umschalter</h1>
+
+    <p>Versuche auf eine der obigen Farben zu klicken, um die Farben auf dieser Seite zu ändern!</p>
+    <section>
+      <h1 class="header"></h1>
+      <div class="key_code_info_container">
+        <article class="key">
+          <p>Key</p>
+          <p class="key_out"></p>
+        </article>
+        <article class="key_code">
+          <p>KeyCode</p>
+          <p class="key_code_out"></p>
+        </article>
+        <article class="code">
+          <p>Code</p>
+          <p class="code_out"></p>
+        </article>
+      </div>
+    </section>
+    <section class="dynamic_color_change">
+      <h1>Meine dynamische Webseite</h1>
+      <p id="demo">Wähle eine Farbe:</p>
+      <p>
+        <button value="pink" class="changeBgcBtn">Rosa</button>
+        <button value="purple" class="changeBgcBtn">Lila</button>
+        <button value="orange" class="changeBgcBtn">Orange</button>
+      </p>
+      <p>
+        <input type="range" id="rot" value="255" min="0" max="255" onchange="changeHandle()" style="background: red" />
+        Rot<br />
+        <input
+          type="range"
+          id="grun"
+          value="255"
+          min="0"
+          max="255"
+          onchange="changeHandle()"
+          style="background: green" />
+        Grün<br />
+        <input
+          type="range"
+          id="blau"
+          value="255"
+          min="0"
+          max="255"
+          onchange="changeHandle()"
+          style="background: blue" />
+        Blau
+      </p>
+    </section>
+  </body>
+</html>
